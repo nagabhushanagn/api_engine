@@ -25,7 +25,7 @@ public class AdvantageTestService {
 
     public List<Map<String, Object>> getJobs() {
         return jdbcTemplate.queryForList(
-            "SELECT TOP 10 \"R-JOB#\" FROM release"
+            "SELECT TOP 10 \"H-JOB#\" FROM HEADER"
         );
     }
 }
